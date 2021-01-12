@@ -1,0 +1,54 @@
+ol {
+  font-size: 28px;
+}
+
+pre {
+  font-size: 20px;
+}
+
+li {
+  padding-bottom: 15px;
+  border-bottom: 3px solid #000;
+}
+.sometext,
+.othertext {
+  color: green;
+  margin-bottom: 15px;
+  font-size: 30px;
+  border: 1px solid blue;
+}
+.parent {
+  color: red;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.child {
+  padding-left: 15px;
+}
+.parent .child {
+  color: green;
+  margin-bottom: 15px;
+  font-size: 30px;
+  border: 1px solid blue;
+}
+
+.parent > .child1 {
+  color: green;
+  margin-bottom: 15px;
+  font-size: 30px;
+  border: 1px solid blue;
+}
+
+.someChild ~ .child2 {
+  color: black;
+  margin-bottom: 15px;
+  font-size: 30px;
+  border: 1px solid green;
+}
+
+.someChild2 + .child3 {
+  color: black;
+  margin-bottom: 15px;
+  font-size: 30px;
+  border: 1px solid green;
+}

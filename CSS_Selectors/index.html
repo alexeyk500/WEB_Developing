@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS_Selectors</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="container">
+    <ol>
+      <li>
+        <p>
+          Выробор одновременно нескольких селекторов CSS осуществляется через запятую - ,
+          <pre>
+            .sometext,
+            .othertext {
+              color: green;
+              margin-bottom: 15px;
+              font-size: 30px;
+              border: 1px solid blue;
+            }
+          </pre>
+        </p>
+        <div class="sometext">sometext gfgfhg</div>
+        <div class="othertext">othertext 2245</div>
+      </li>
+
+      <li>
+        <p>
+          Доступ ко <strong>ВСЕМ</strong>  потомкам CSS элемента осуществляется через пробел (каскад)
+          Везде стараемся применять минимальную вложенность (каскады лучше не применять)
+          <br>
+          чем больше длинна какада, тем больше приоритет у стиля котрый он опрделяет
+          <br>
+          (<strong>".container .parent .child"</strong> имеет больший вес чем <strong>".parent .child"</strong>)
+          <pre>
+            .parent .child {
+              color: green;
+              margin-bottom: 15px;
+              font-size: 30px;
+              border: 1px solid blue;
+            }
+          </pre>
+        </p>
+        <div class="parent">parent gfgfhg
+          <div class="child">1 child</div>
+          <div class="child">2 child</div>
+          <div class="child">3 child</div>
+        </div>
+        <div class="child">4 child</div>
+      </li>
+
+      <li>
+        <p>
+          доступ ко непосредственным потомкам CSS элемента осуществляется через птичку направо - &gt;
+          <pre>
+            .parent &gt .child {
+              color: green;
+              margin-bottom: 15px;
+              font-size: 30px;
+              border: 1px solid blue;
+            }
+          </pre>
+        </p>
+        <div class="parent">parent gfgfhg
+          <div class="child1">1 child
+            <div class="child1">1-1 child</div>
+            <div class="child1">1-2 child</div>
+          </div>
+          <div class="child1">2 child
+            <div class="child1">2-1 child</div>
+          </div>
+          <div class="child1">3 child</div>
+        </div>
+        <div class="child1">4 child</div>
+      </li>
+
+    <li>
+      <p>
+        доступ ко всем последущим соседям выбранного элемента CSS(находящемся с ним на одном уровне)
+        осуществляется через тильду - ~
+        <pre>
+          .someChild ~ .child2 {
+            color: green;
+            margin-bottom: 15px;
+            font-size: 30px;
+            border: 1px solid blue;
+          }
+        </pre>
+      </p>
+
+      <div class="parent">parent gfgfhg
+        <div class="child2">1 child
+          <div class="child2 someChild">1-1 child someChild</div>
+          <div class="child2">1-2 child</div>
+          <div class="child2">1-3 child</div>
+        </div>
+        <div class="child2">2 child</div>
+      </div>
+      <div class="child2">3 child</div>
+    </li>
+
+    <li>
+      <p>
+        доступ к первому соседу выбранного элемента CSS(находящемся с ним на одном уровне)
+        осуществляется через плюс - +
+        <pre>
+          .someChild2 ~ .child3 {
+            color: green;
+            margin-bottom: 15px;
+            font-size: 30px;
+            border: 1px solid blue;
+          }
+        </pre>
+      </p>
+
+      <div class="parent">parent gfgfhg
+        <div class="child3">1 child
+          <div class="child3 someChild2">1-1 child someChild</div>
+          <div class="child3">1-2 child</div>
+          <div class="child3">1-3 child</div>
+        </div>
+        <div class="child3">2 child
+          <div class="child3">2-1 child</div>
+        </div>
+        <div class="child3">3 child</div>
+      </div>
+      <div class="child3">4 child</div>
+    </li>
+  </ol>
+
+  </div>
+</body>
+</html>
