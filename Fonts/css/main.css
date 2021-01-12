@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'ditedregular';
+  src: url('../fonts/dited-webfont.woff2') format('woff2'),
+       url('../fonts/dited-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 32px;
+  color:#1bbb0d;
+}
+
+ol {
+  color:#0a3e9e;
+  font-size: 28px;
+}
+
+li {
+  border-bottom: 1px solid #666;
+  padding-bottom: 15px;
+  }
+
+p {
+color: #1f1c1c;
+font-size: 26px;
+margin-bottom: 15px;
+}
+
+pre {
+font-size: 20px;
+}
+
+
+.centeredText {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+}
+
+.linkToSource {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.pictureForList {
+  display: block;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: auto 100%; */
+  background-color: transparent;
+  background-size: contain;
+}
+
+.fontsload {
+  background-image: url('../img/fonts_load.png');
+}
+
+.fontsSelectOption {
+  background-image: url('../img/fonts_select_option.png');
+}
+
+.fontsConvert {
+  background-image: url('../img/fonts_convert.png');
+}
+
+.fontsDownloaded {
+  background-image: url('../img/fonts_downloaded.png');
+}
+
+.downloadWoffWoff2 {
+  background-image: url('../img/downloadWoffWoff2.png');
+}
+
+.fontsInProject {
+  background-image: url('../img/fontsInProject.png');
+}
+
+.pasteInToCSS {
+  background-image: url('../img/pasteInToCSS.png');
+}
+
+.applyFonts {
+  background-image: url('../img/applyFonts.png');
+}
+
+.testText {
+  color: blue;
+  font-family: 'ditedregular', sans-serif;
+  font-size: 32px;
+  line-height: 24px;
+  padding-left: 50px;
+  padding-right: 50px;
+}

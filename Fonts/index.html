@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Подключение шрифтов</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="centeredText">Конвертация и Подключение шрифтов через CSS</h1>
+        <a class="linkToSource centeredText" href="https://www.fontsquirrel.com">
+            Конвертация шрифтов в формат woff woff2 с помощью сайта www.fontsquirrel.com
+            <br>
+            и последующее подключение конвертированных шрифтов в свой проект
+        </a>
+        <ol>
+          <li>
+            <p>Заходим на сайт
+              <span>
+                <a href="https://www.fontsquirrel.com">fontsquirrel.com</a>
+              </span>
+              и в разделе Generator загружаем свой шрифт
+            </p>
+            <span class="pictureForList fontsload"></span>
+          </li>
+          <li>
+            <p>Выбираем опцию Expert, настраиваем необходимые опции</p>
+            <span class="pictureForList fontsSelectOption"></span>
+          </li>
+          <li>
+            <p>Соглашаемся с условиями и нажимаем кнопку - "DOUNLOAD YOR KIT"</p>
+            <span class="pictureForList fontsConvert"></span>
+          </li>
+          <li>
+            <p>Из загруженной папки копируем файлы с расширением woff и woff2 к себе в проект в папку "fonts"</p>
+            <span class="pictureForList downloadWoffWoff2"></span>
+            <span class="pictureForList fontsInProject"></span>
+          </li>
+          <li>
+            <p>В загружееной папке со шрифтами выбираем файл stylesheet.css
+              в нем лежит код который вставляем в CSS для загруженных шрифтов
+            </p>
+            <pre>
+              @font-face {
+                font-family: 'ditedregular';
+                src: url('dited-webfont.woff2') format('woff2'),
+                     url('dited-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+              }
+            </pre>
+            <span class="pictureForList fontsDownloaded"></span>
+            <span class="pictureForList pasteInToCSS"></span>
+          </li>
+          <li>
+            <p>Применяем добавленные шрифты к нужным тегам через свойство font-family</p>
+            <span class="pictureForList applyFonts"></span>
+          </li>
+          <li>
+            <h3>Пример применения загруженного шрифта</h3>
+            <p class="testText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Nobis, recusandae quis enim numquam nulla eligendi earum ducimus
+              ad officia dolorum iusto provident, quaerat dolor est ipsa
+              asperiores dicta velit iste!
+            </p>
+          </li>
+        </ol>
+    </div>
+</body>
+</html>
