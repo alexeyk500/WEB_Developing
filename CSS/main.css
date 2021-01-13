@@ -1,0 +1,51 @@
+body {
+  background-color:#c7c5c5;
+}
+ol {
+  font-size: 28px;
+}
+
+pre {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: blue;
+}
+
+.high_lite {
+  background-color:lightgreen;
+}
+
+
+.chapter_element_item {
+  font-size: 22px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #000;
+}
+
+.html_chapter_item,
+.css_chapter_item,
+.js_chapter_item {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+p{
+  max-width: 50%;
+}
+
+.chapter_description {
+  color: darkblue;
+  font-size: 26px;
+}
+
+.sections_list,
+.section_item_header {
+  padding-right: 15px;
+  color: blue;
+  font-size: 24px;
+}
+
+.chapter_item_link {
+  font-size: 24px;
+}

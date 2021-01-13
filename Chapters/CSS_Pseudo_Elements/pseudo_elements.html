@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS_Selectors</title>
+  <link rel="stylesheet" href="../../CSS/main.css">
+  <link rel="stylesheet" href="./pseudo_elements.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="chapter_header">Псевдоэлементы в CSS</h2>
+    <p class="chapter_description">
+      Псевдоэлементы - элементы CSS которых не существует в DOM дереве,
+      но докоторых мы можем дотянуться и их стилизовать
+    </p>
+    <ol>
+      <li class="chapter_element_item">
+        <p>
+          Текстовые псевдоэлементы - стилизация первой буквы текста ::first-letter
+          <p></p>
+          <pre>
+            .my_class1::first-letter {
+              font-size: 28px;
+              color: blue;
+            }</pre>
+        </p>
+        <p class="my_class1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </li>
+
+      <li class="chapter_element_item">
+        <p>
+          Текстовые псевдоэлементы - стилизация первой строки текста ::first-line
+          <pre>
+            .my_class2::first-line {
+              font-style: italic;
+              color: red;
+            }</pre>
+        </p>
+        <p class="my_class2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          <br>
+          ipsum dolor consectetur sit amet elit consectetur adipisicing .
+          <br>
+          consectetur ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+      </li>
+
+      <li class="chapter_element_item">
+        <p>
+          Текстовые псевдоэлементы - ::selection - выделенный текст на странице
+          <p>При выделении текста мышкой его background будет окрашиваться в желтый цвет</p>
+          <pre>
+            ::selection {
+              background-color: yellow;
+            }</pre>
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          <br>
+          ipsum dolor consectetur sit amet elit consectetur adipisicing .
+          <br>
+          consectetur ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+      </li>
+
+      <li class="chapter_element_item">
+        <p>
+          Псевдоэлементы - ::before и ::after
+          <p>::before вставляется сразу в начало блока, a ::after самый конец блока </p>
+          <p>для отображения контента используется свойство content, оно обязательное </p>
+          <p>без него ::before и ::after отображаться не будут</p>
+          <pre>
+            .scene::before {
+              content: 'before';
+              display: block;
+              color: red;
+            }
+            .scene::after {
+              display: block;
+              content: 'after';
+              color: red;
+            }</pre>
+        </p>
+        <div class="scene">
+          <div>TexT</div>
+        </div>
+
+        <br>
+        <br>
+        <p>c пустым свойством content - content='' можем отображать background
+          <pre>
+            .scene1::before {
+              height: 100px;
+              content: '';
+              display: block;
+              background-color:red;
+            }
+            .scene1::after {
+              height: 100px;
+              content: '';
+              display: block;
+              background-color: green;
+            }</pre>
+        </p>
+        <div class="scene1">
+          <div>New_TexT</div>
+        </div>
+
+        <br>
+        <br>
+        <p>создание фона через before и after
+          <pre>
+            .scene2 &gt; * {
+              position: relative;
+              z-index: 1;
+            }
+
+            .scene2::before {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background:lightskyblue;
+            }
+
+            .scene2::after {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background:#999;
+            }</pre>
+        </p>
+        <div class="scene2">
+          <div>Scene2</div>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+</body>
+</html>

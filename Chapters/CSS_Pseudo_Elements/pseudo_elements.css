@@ -1,0 +1,96 @@
+.my_class1::first-letter {
+  font-size: 28px;
+  color: blue;
+}
+
+.my_class2::first-line {
+  font-style: italic;
+  color: red;
+}
+
+::selection {
+  background-color: yellow;
+}
+
+.scene {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: 1px solid #999;
+}
+
+.scene::before {
+  content: 'before';
+  display: block;
+  color: red;
+}
+.scene::after {
+  display: block;
+  content: 'after';
+  color: red;
+}
+
+.scene1 {
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #999;
+}
+
+.scene1::before {
+  height: 100px;
+  content: '';
+  display: block;
+  background-color:red;
+}
+.scene1::after {
+  height: 100px;
+  content: '';
+  display: block;
+  background-color: green;
+}
+
+.scene2 {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #999;
+}
+
+.scene2 > * {
+  position: relative;
+  z-index: 1;
+}
+
+.scene2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background:lightskyblue;
+}
+
+.scene2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background:#999;
+}
+
+
+
+
