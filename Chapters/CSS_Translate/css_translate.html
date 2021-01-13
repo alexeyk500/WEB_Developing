@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS_Selectors</title>
+  <link rel="stylesheet" href="../../CSS/main.css">
+  <link rel="stylesheet" href="./css_translate.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="chapter_header">CSS свойство Translate</h2>
+    <p class="chapter_description">
+      Translate - свойство позволяющее трансформировать обект(перемещать и деформировать)
+      <br>
+      не вырывая его из контекста потока элементов (он сдвигается только визуально)
+    </p>
+    <ol>
+      <li class="chapter_element_item">
+        <p>
+          Различные виды трансформаций:
+          <p></p>
+          <!-- <pre>
+            .my_class1::first-letter {
+              font-size: 28px;
+              color: blue;
+            }</pre> -->
+        </p>
+        <div class="scene">
+          <div class="element element_matrix">matrix(1.2, 0, 0.5, 1.2, 50, 0)</div>
+          <div class="element element_translate">translate(25px, 40px)</div>
+          <div class="element element_translateX">translateX(35px)</div>
+          <div class="element element_translateY">translateY(35px)</div>
+          <div class="element element_scale">scale(0.5, 0.3)</div>
+          <div class="element element_scaleX">scaleX(1.3)</div>
+          <div class="element element_scaleY">scaleY(1.35)</div>
+          <div class="element element_rotate">rotate(180deg)</div>
+          <div class="element element_skew">skew(-35deg, 50deg)</div>
+          <div class="element element_skewX">skewX(15deg)</div>
+          <div class="element element_skewY">skewY(35deg)</div>
+          <div class="element element_rotate_origin">
+            <div>rotate(15deg)</div>
+            <div>+</div>
+            <div style="font-size: 20px;">transform-origin: 100% 0</div>
+          </div>
+        </div>
+      </li>
+
+      <li class="chapter_element_item">
+        <p>
+          Эффект закрывающегося затвора с помощью псевдоэлентов before и after:
+        </p>
+        <div class="scene2">
+          <div>New_TexT</div>
+        </div>
+      </li>
+
+
+    </ol>
+  </div>
+
+
+</body>
+</html>
