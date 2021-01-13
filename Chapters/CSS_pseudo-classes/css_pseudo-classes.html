@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pseudo-Classes</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="container">
+    <ol>
+      <li>
+        <p>Псевдокласс :hover - курсор находится над элементом</p>
+        <button class="btn">Наведи на меня</button>
+      </li>
+
+      <li>
+        <p>Псевдокласс :focus - элемент выбран</p>
+        <p>свойство "autofocus" для того что бы выбрать элемент на странице
+          <pre>
+            &lt;button autofocus class="btn"&gt;Выбери на меня&lt;/button&gt;
+          </pre>
+        </p>
+        <p>свойство "disableds" для того что бы сделать элемент не активным <br>
+          &lt;button disabled class="btn"&gt;Я не активна&lt;/button&gt; <br>
+           затеняем кнопку в CSS и делаем ее неактивной для действий пользователя
+           <pre>
+            .btn:disabled {
+              opacity: .5;
+              pointer-events: none;
+            }
+           </pre>
+
+        </p>
+        <button class="btn">Выбери на меня</button>
+        <button autofocus class="btn">Выбери на меня</button>
+        <button class="btn">Выбери на меня</button>
+        <button disabled class="btn">Я не активна</button>
+      </li>
+      <li>
+        <p> Выбор третьего элемента в пределах родителя child:nth-child(3)</p>
+
+        <div class="parent">
+          <div class="child">1</div>
+          <div class="child">2</div>
+          <div class="child">3</div>
+          <div class="child">4</div>
+          <div class="child">5</div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+</body>
+</html>

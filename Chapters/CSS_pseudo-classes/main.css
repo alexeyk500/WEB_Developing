@@ -1,0 +1,55 @@
+ol {
+  font-size: 28px;
+}
+
+li {
+  padding-bottom: 15px;
+  border-bottom: 3px solid #000;
+}
+
+.btn {
+  margin-right: 30px;
+  padding: 20px 40px;
+  color: azure;
+  font-size: 24px;
+  background-color: #1644af;
+  border-radius: 12px;
+
+}
+
+.btn:hover {
+  color: #f4fad1;
+  background-color: #10295f;
+  content: 'Нажми меня';
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #c8eb04;
+}
+
+.btn:disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.parent {
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.child {
+  width: 15%;
+  min-height: 100px;
+  background-color: powderblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.child:nth-child(3){
+  background-color: red;
+}
+

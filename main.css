@@ -1,0 +1,10 @@
+.sections_list,
+.section_item_header {
+  padding-right: 15px;
+  color: blue;
+  font-size: 24px;
+}
+
+.chapter_item_link {
+  font-size: 24px;
+}
