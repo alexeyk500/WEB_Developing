@@ -1,0 +1,14 @@
+:root {
+  --BigFontSize:  32px;
+  --SmalFontSize: 12px;
+  --fontColor: red;
+}
+
+.test {
+  font-size: var(--BigFontSize);
+}
+
+.test1 {
+  font-size: var(--SmalFontSize);
+  color: var(--fontColor);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS_Selectors</title>
+  <link rel="stylesheet" href="../../CSS/main.css">
+  <link rel="stylesheet" href="./css_var.css">
+  <script defer src="./css_var.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2 class="chapter_header">Переменные в CSS</h2>
+    <p class="chapter_description">
+      Переменные - экспериментальные элементы CSS поддерживаемые не всеми браузерами
+    </p>
+    <ol>
+      <li class="chapter_element_item">
+        <p>
+          нотация переменных --имя_переменной: значение переменной
+          <br>
+          доступ к переменной через функцию var()
+          <pre>
+            :root {
+              --BigFontSize:  32px;
+              --SmalFontSize: 12px;
+              --fontColor: red;
+            }
+
+            .test {
+              font-size: var(--BigFontSize);
+            }
+
+            .test1 {
+              font-size: var(--SmalFontSize);
+              color: var(--fontColor);
+            }
+          </pre>
+          <p style="color: navy">
+            Где <span>:root {} </span> - глобальная область видимости, но переменные можно задавать и блочно
+            тогда они видны будуть только в блоке где определялись
+          </p>
+        </p>
+        <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid tempora odio
+              eius nesciunt architecto, quo ratione voluptatem unde fugit sed dolorem cum impedit
+              aut eaque aperiam. Voluptate, neque nemo!
+        </div>
+        <br>
+        <div class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid tempora odio
+          eius nesciunt architecto, quo ratione voluptatem unde fugit sed dolorem cum impedit
+          aut eaque aperiam. Voluptate, neque nemo!
+        </div>
+        <br>
+        <div class="test1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid tempora odio
+          eius nesciunt architecto, quo ratione voluptatem unde fugit sed dolorem cum impedit
+          aut eaque aperiam. Voluptate, neque nemo!
+        </div>
+      </li>
+
+      <li class="chapter_element_item">
+        <p>
+           Доступ к переменным CSS из Java Script
+          <p></p>
+          <pre>
+            // JS
+            var root = document.querySelector(':root');
+            var rootStyles = getComputedStyle(root);
+            var textColor = rootStyles.getPropertyValue('--fontColor');
+            console.log(textColor) // - red</pre>
+        </p>
+      </li>
+    </ol>
+  </div>
+</body>
+</html>
