@@ -39,13 +39,113 @@
       </li>
       <li>
         <p> Выбор третьего элемента в пределах родителя child:nth-child(3)</p>
-
         <div class="parent">
           <div class="child">1</div>
           <div class="child">2</div>
           <div class="child">3</div>
           <div class="child">4</div>
           <div class="child">5</div>
+        </div>
+      </li>
+      <li>
+        <p> Выбор первого элемента в пределах родителя child:first-child</p>
+        <div class="parent">
+          <div class="child_f">1</div>
+          <div class="child_f">2</div>
+          <div class="child_f">3</div>
+          <div class="child_f">4</div>
+          <div class="child_f">5</div>
+        </div>
+      </li>
+      <li>
+        <p> Выбор последнего элемента в пределах родителя child:last-child</p>
+        <div class="parent">
+          <div class="child_l">1</div>
+          <div class="child_l">2</div>
+          <div class="child_l">3</div>
+          <div class="child_l">4</div>
+          <div class="child_l">5</div>
+        </div>
+      </li>
+      <li>
+        <p> Выбор второго элемента в пределах родителя с конца child:nth-last-child(2)</p>
+        <div class="parent">
+          <div class="child_ll">1</div>
+          <div class="child_ll">2</div>
+          <div class="child_ll">3</div>
+          <div class="child_ll">4</div>
+          <div class="child_ll">5</div>
+        </div>
+      </li>
+      <li>
+        <p> Выбор кратного n элемента в пределах родителя child:nth-child(2n)</p>
+        <div class="parent">
+          <div class="child_n">1</div>
+          <div class="child_n">2</div>
+          <div class="child_n">3</div>
+          <div class="child_n">4</div>
+          <div class="child_n">5</div>
+        </div>
+      </li>
+      <li>
+        <p> Выбор 3-го и далее элемента в пределах родителя child:nth-child(n+3)</p>
+        <div class="parent">
+          <div class="child_nn">1</div>
+          <div class="child_nn">2</div>
+          <div class="child_nn">3</div>
+          <div class="child_nn">4</div>
+          <div class="child_nn">5</div>
+        </div>
+      </li>
+      <li>
+        <p> Выбор всех включая 3-го элемента в пределах родителя child:nth-child(-n+3)</p>
+        <div class="parent">
+          <div class="child_nnn">1</div>
+          <div class="child_nnn">2</div>
+          <div class="child_nnn">3</div>
+          <div class="child_nnn">4</div>
+          <div class="child_nnn">5</div>
+        </div>
+      </li>
+      <li>
+        <p>Селектор : not</p>
+        <p> Выбор всех кроме 3-го элемента в пределах родителя child:not(:nth-child(3))</p>
+        <div class="parent">
+          <div class="child_m">1</div>
+          <div class="child_m">2</div>
+          <div class="child_m">3</div>
+          <div class="child_m">4</div>
+          <div class="child_m">5</div>
+        </div>
+      </li>
+      <li>
+        <p>Селектор : not</p>
+        <p> Выбор всех кроме элемента c дополнительным классом в пределах родителя child:not(:nth-child(.my_class))</p>
+        <p> &lt;div class="child_m  my_class"&gt;2&lt;/div&gt; </p>
+        <div class="parent">
+          <div class="child_mm">1</div>
+          <div class="child_mm my_class">2</div>
+          <div class="child_mm">3</div>
+          <div class="child_mm">4</div>
+          <div class="child_mm">5</div>
+        </div>
+      </li>
+      <li>
+        <p>Выбор селектора CSS по его атрибутам - [атрибут] </p>
+        <p>Выбираем все Input с типом "text" </p>
+        <p>&lt;input type="text" placeholder="1-text" class="input_text"&gt;</p>
+        <pre>
+          input[type="text"] {
+            font-size: 20px;
+            background-color:yellow;
+          }
+        </pre>
+        <div class="parent">
+          <input type="text" placeholder="1-text" class="input_text">
+          <input type="text" placeholder="2-text" class="input_text">
+          <input type="text" placeholder="3-text" class="input_text my_input">
+          <input type="number" placeholder="4-number" class="input_number">
+          <input type="number" placeholder="4-number" class="input_number">
         </div>
       </li>
     </ol>

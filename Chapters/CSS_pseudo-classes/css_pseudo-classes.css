@@ -14,7 +14,6 @@ li {
   font-size: 24px;
   background-color: #1644af;
   border-radius: 12px;
-
 }
 
 .btn:hover {
@@ -39,7 +38,15 @@ li {
   justify-content: space-between;
 }
 
-.child {
+.child,
+.child_f,
+.child_l,
+.child_ll,
+.child_n,
+.child_nn,
+.child_nnn,
+.child_m,
+.child_mm {
   width: 15%;
   min-height: 100px;
   background-color: powderblue;
@@ -49,7 +56,43 @@ li {
   border-radius: 10px;
 }
 
-.child:nth-child(3){
+.parent .child:nth-child(3){
   background-color: red;
 }
 
+.child_f:first-child {
+  background-color: green;
+}
+
+.child_l:last-child {
+  background-color: blue;
+}
+
+.child_ll:nth-last-child(2) {
+  background-color:yellowgreen;
+}
+
+.child_n:nth-child(2n) {
+  background-color:maroon;
+}
+
+.child_nn:nth-child(n+3) {
+  background-color:springgreen;
+}
+
+.child_nnn:nth-child(-n+3) {
+  background-color: lightseagreen;
+}
+
+.child_m:not(:nth-child(3)) {
+  background-color: violet;
+}
+
+.child_mm:not(.my_class) {
+  background-color: gray;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  background-color:yellow;
+}
