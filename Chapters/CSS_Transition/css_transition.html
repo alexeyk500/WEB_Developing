@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS_Selectors</title>
+  <link rel="stylesheet" href="../../CSS/main.css">
+  <link rel="stylesheet" href="./css_transition.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="chapter_header">CSS Transition</h2>
+    <p class="chapter_description">
+      Transition - Стилевое свойство позволяещее создать эффект перехода
+    </p>
+    <ol>
+      <li class="chapter_element_item">
+        <p>
+          Создадим эффект плавного изменения 2 свойств  - цвета и толщины текста при наведении мышки
+          <br>
+          <a href="http://www.roblaplaca.com/examples/bezierBuilder/">Сайт для расчета transition-timing-function по CSS cubic-bezier Builder </a>
+          <pre>
+            .scene {
+              width: 400px;
+              height: 400px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 24px;
+              color: lime;
+              background-color: #999;
+              border: 1px solid black;
+              transition-property: color, font-size;
+              transition-duration: 1000ms;
+              transition-timing-function: ease-in-out;
+            }
+
+            .scene:hover {
+              font-size: 48px;
+              color:blue;
+            }</pre>
+        </p>
+        <div class="scene">
+          <div class="">Scene</div>
+        </div>
+      </li>
+
+      <li class="chapter_element_item">
+        <p>
+          Короткая запись <strong>transition: color, font-size 1000ms cubic-bezier(.39, 1, .55, 0);</strong>
+          <br>
+          <p>Для того что бы отложить Transition
+            <br> используем свойство - <strong>transition-delay: 300ms;</strong> </p>
+          <pre>
+            .scene1 {
+              width: 400px;
+              height: 400px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 24px;
+              color: lime;
+              background-color: #999;
+              border: 1px solid black;
+              transition: color, font-size 1000ms cubic-bezier(.39, 1, .55, 0);
+              transition-delay: 300ms;
+            }
+
+            .scene1:hover {
+              font-size: 48px;
+              color:blue;
+            }
+        </p>
+        <div class="scene1">
+          <div class="">Scene</div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</body>
+</html>
