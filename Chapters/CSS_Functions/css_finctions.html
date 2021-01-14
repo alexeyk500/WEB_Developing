@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS_Functions</title>
+  <link rel="stylesheet" href="../../CSS/main.css">
+  <link rel="stylesheet" href="./css_functions.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="chapter_header">Функции в CSS</h2>
+    <p class="chapter_description">
+      Функции CSS: var(), calc(), blur()
+    </p>
+    <ol>
+      <li class="chapter_element_item">
+        <p>
+          Функция blur() - пример использования
+          <p></p>
+          <pre>
+            .scene {
+              width: 400px;
+              height: 400px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 1px solid #333;
+              background: #988;
+              transition: filter 1000ms ease;
+            }
+
+            .scene__text {
+              max-width: 75%;
+              font-size: 24px;
+              text-align: center;
+              filter: blur(3px);
+            }
+
+            .scene:hover > .scene__text {
+              filter: none;
+            }</pre>
+        </p>
+        <div class="scene">
+          <p class="scene__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Error ex et unde molestias possimus, aperiam odio eveniet quam fugit,
+            maxime commodi delectus. Tempora nostrum ad quidem, non incidunt minus quas!
+          </p>
+        </div>
+      </li>
+
+      <li class="chapter_element_item">
+        <p>
+          Функция calc() - пример использования
+          <p></p>
+          <pre>
+            .scene1 {
+              width: 400px;
+              height: 400px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border: 1px solid #333;
+              background: #988;
+            }
+
+            .scene1-item {
+              width: calc(33% - 10px);
+              height: 100px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 36px;
+              color: navy;
+              background-color: magenta;
+              transition: color, background-color 1000ms ease;
+            }
+
+            .scene1-item:hover {
+              color:  magenta;
+              background-color: navy;
+            }</pre>
+        </p>
+        <div class="scene1">
+          <div class="scene1-item">1</div>
+          <div class="scene1-item">2</div>
+          <div class="scene1-item">3</div>
+        </div>
+      </li>
+
+      <li class="chapter_element_item">
+        <p>
+          Функция linear-gradient() - пример использования
+          <pre>
+            .scene2 {
+              width: 400px;
+              height: 400px;
+              background: rgb(2,0,36);
+              background: linear-gradient(220deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+            }
+
+            .scene2:hover {
+              background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+            }</pre>
+        </p>
+        <div class="scene2">
+        </div>
+      </li>
+    </ol>
+  </div>
+</body>
+</html>

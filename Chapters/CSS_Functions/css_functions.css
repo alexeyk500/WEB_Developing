@@ -1,0 +1,60 @@
+.scene {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+  background: #988;
+  transition: filter 1000ms ease;
+}
+
+.scene__text {
+  max-width: 75%;
+  font-size: 24px;
+  text-align: center;
+  filter: blur(3px);
+}
+
+.scene:hover > .scene__text {
+  filter: none;
+}
+
+.scene1 {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #333;
+  background: #988;
+}
+
+.scene1-item {
+  width: calc(33% - 10px);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: navy;
+  background-color: magenta;
+  transition: color, background-color 1000ms ease;
+}
+
+.scene1-item:hover {
+  color:  magenta;
+  background-color: navy;
+}
+
+.scene2 {
+  width: 400px;
+  height: 400px;
+  background: rgb(2,0,36);
+  background: linear-gradient(220deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.scene2:hover {
+  background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+}
+
