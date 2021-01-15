@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BootStrap Grid</title>
+  <link rel="stylesheet" href="./bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../../CSS/main.css">
+  <style>
+    .test {
+      padding: 30px;
+      outline: 1px solid #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="chapter_header">Сетки Bootstrap</h2>
+    <p class="chapter_description">
+      Использование сеток Bootstrap - для использования сеток
+      подключаем загруженный файл "bootstrap-grid.min.css"
+    </p>
+    <p class="chapter_description">Документация
+      <a href="https://bootstrap-4.ru/docs/4.5/layout/grid/">https://bootstrap-4.ru</a>
+    </p>
+    <ol>
+      <li class="chapter_element_item">
+        <p>
+          Простая сетка на Bootstrap
+          <p>
+            <pre class="hljs" style="display: block; overflow-x: auto; background-color: rgb(240, 240, 240); color: rgb(68, 68, 68);">&lt;<span class="hljs-keyword" style="font-weight: 700;">div</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"container-fluid"</span>&gt;
+              &lt;<span class="hljs-keyword" style="font-weight: 700;">div</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"row"</span>&gt;
+                &lt;<span class="hljs-keyword" style="font-weight: 700;">div</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"test col-lg-2 col-sm-4 col-6"</span>&gt;
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                &lt;/<span class="hljs-keyword" style="font-weight: 700;">div</span>&gt;
+                &lt;<span class="hljs-keyword" style="font-weight: 700;">div</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"test col-lg-2 col-sm-4 col-6"</span>&gt;
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                &lt;/<span class="hljs-keyword" style="font-weight: 700;">div</span>&gt;
+                &lt;<span class="hljs-keyword" style="font-weight: 700;">div</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"test col-lg-2 col-sm-4 col-6"</span>&gt;
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                &lt;/<span class="hljs-keyword" style="font-weight: 700;">div</span>&gt;
+                &lt;<span class="hljs-keyword" style="font-weight: 700;">div</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"test col-lg-2 col-sm-4 col-6"</span>&gt;
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                &lt;/<span class="hljs-keyword" style="font-weight: 700;">div</span>&gt;
+                &lt;<span class="hljs-keyword" style="font-weight: 700;">div</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"test col-lg-2 col-sm-4 col-6"</span>&gt;
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                &lt;/<span class="hljs-keyword" style="font-weight: 700;">div</span>&gt;
+                &lt;<span class="hljs-keyword" style="font-weight: 700;">div</span> <span class="hljs-built_in" style="color: rgb(57, 115, 0);">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"test col-lg-2 col-sm-4 col-6"</span>&gt;
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                &lt;/<span class="hljs-keyword" style="font-weight: 700;">div</span>&gt;
+              &lt;/<span class="hljs-keyword" style="font-weight: 700;">div</span>&gt;
+            &lt;/<span class="hljs-keyword" style="font-weight: 700;">div</span>&gt;</pre>
+          </p>
+        </p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="test col-lg-2 col-sm-4 col-6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+            <div class="test col-lg-2 col-sm-4 col-6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+            <div class="test col-lg-2 col-sm-4 col-6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+            <div class="test col-lg-2 col-sm-4 col-6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+            <div class="test col-lg-2 col-sm-4 col-6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+            <div class="test col-lg-2 col-sm-4 col-6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="row">
+            <div class="test col-lg-12">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="row">
+            <div class="test col-lg-3 col-sm-6 col-12">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+            <div class="test col-lg-3 col-sm-6 col-12">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+            <div class="test col-lg-3 col-sm-6 col-12">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+            <div class="test col-lg-3 col-sm-6 col-12">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+          </div>
+        </div>
+
+      </li>
+    </ol>
+  </div>
+</body>
+</html>
